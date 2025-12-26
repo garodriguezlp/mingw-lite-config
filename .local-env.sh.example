@@ -1,0 +1,38 @@
+#!/bin/bash
+# Local Environment Configuration Example
+# Copy this file to ~/.local-env.sh and customize for your system
+#
+# This file is sourced automatically by mingw-lite-config if it exists
+# in your home directory (~/.local-env.sh)
+
+# ============================================================================
+# Custom PATH Additions
+# ============================================================================
+# Use CUSTOM_PATHS array to add multiple directories to your PATH
+# Each path on a separate line for clean, readable configuration
+# Paths can use ~ for home directory and environment variables
+#
+# Example:
+CUSTOM_PATHS=(
+    "/c/my-tools/bin"
+    "/c/another-tool/bin"
+    "~/local/bin"
+    "$HOME/scripts"
+)
+#
+# The plugin will automatically add each valid directory to your PATH
+
+# ============================================================================
+# Other Custom Environment Variables
+# ============================================================================
+# Add any other machine-specific environment variables here
+
+# Private API keys (never commit these!)
+# export API_KEY="your-secret-key-here"
+
+# Custom application settings
+# export JAVA_HOME="/c/Program Files/Java/jdk-17"
+# export MAVEN_HOME="/c/tools/apache-maven"
+
+# Additional PATH additions (traditional method)
+# export PATH="$PATH:/c/custom/path"

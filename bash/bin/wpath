@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Check if a parameter is provided
+if [ -z "$1" ]; then
+  echo "Usage: $(basename "$0") <path>"
+  exit 1
+fi
+
+# Get the full (absolute) path
+full_path=$(realpath "$1")
+
+# Convert to Windows path using cygpath
+windows_path=$(cygpath -w "$full_path")
+
+# Copy to clipboard and display
+echo "$windows_path" | clip
+echo "(Windows path copied to clipboard)"
+echo "$windows_path"
