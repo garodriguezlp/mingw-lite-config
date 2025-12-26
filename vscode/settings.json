@@ -4,8 +4,7 @@
     "editor.renderWhitespace": "all",
     "files.autoSave": "onFocusChange",
     "github.copilot.enable": {
-        "markdown": true,
-        "plaintext": true
+        "*": true
     },
     "terminal.integrated.allowChords": false,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -15,7 +14,8 @@
     "vim.handleKeys": {
         "<C-p>": false,
         "<C-f>": false,
-        "<C-b>": false
+        "<C-b>": false,
+        "<C-j>": false
     },
     "vim.replaceWithRegister": true,
     "vim.smartRelativeLine": true,
