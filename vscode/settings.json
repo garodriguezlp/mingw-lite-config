@@ -1,0 +1,28 @@
+{
+    "chat.mcp.autostart": "never",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "files.autoSave": "onFocusChange",
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontSize": 15,
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-f>": false,
+        "<C-b>": false
+    },
+    "vim.replaceWithRegister": true,
+    "vim.smartRelativeLine": true,
+    "vim.sneak": true,
+    "vim.textwidth": 100,
+    "vim.useSystemClipboard": true,
+    "window.menuBarVisibility": "compact",
+    "window.newWindowProfile": "Default",
+    "workbench.startupEditor": "none"
+}
