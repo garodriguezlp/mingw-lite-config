@@ -160,11 +160,11 @@ else
   fi
 fi
 
-# ALT-C - cd into the selected directory
+# Shift+Down - cd into the selected directory
 if [[ ${FZF_ALT_C_COMMAND-x} != "" ]]; then
-  bind -m emacs-standard '"\ec": " \C-b\C-k \C-u`__fzf_cd__`\e\C-e\er\C-m\C-y\C-h\e \C-y\ey\C-x\C-x\C-d\C-y\ey\C-_"'
-  bind -m vi-command '"\ec": "\C-z\ec\C-z"'
-  bind -m vi-insert '"\ec": "\C-z\ec\C-z"'
+  bind -m emacs-standard '"\e[1;2B": " \C-b\C-k \C-u`__fzf_cd__`\e\C-e\er\C-m\C-y\C-h\e \C-y\ey\C-x\C-x\C-d\C-y\ey\C-_"'
+  bind -m vi-command '"\e[1;2B": "\C-z\e[1;2B\C-z"'
+  bind -m vi-insert '"\e[1;2B": "\C-z\e[1;2B\C-z"'
 fi
 #----END shfmt
 
