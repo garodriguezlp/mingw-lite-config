@@ -13,6 +13,15 @@ MinGW-Lite Config provides a clean, organized way to manage your Bash environmen
 
 ## Getting Started
 
+### Quick Setup
+Run the helper to wire `~/.bashrc` and copy the local env template:
+
+```bash
+bash bootstrap.sh
+```
+
+It ensures `~/.bashrc` sources [bash/core.sh](bash/core.sh) or a compiled file and creates `~/.local-env.sh` from [.local-env.sh.example](.local-env.sh.example) if missing.
+
 ### 1. Integrate with Your Shell
 
 Add this to your `~/.bashrc`:
