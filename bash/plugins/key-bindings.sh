@@ -9,5 +9,7 @@ __cd_up__() {
 ####################################################################################################
 # KEY BINDINGS
 ####################################################################################################
-# Bind Shift+Up Arrow to execute the "cd_up" command
-bind '"\e[1;2A": "__cd_up__\n"'
+# Bind Shift+Up Arrow to execute the "cd_up" command (interactive sessions only)
+if [[ $- =~ i ]]; then
+    bind '"\e[1;2A": "__cd_up__\n"'
+fi
